@@ -1,0 +1,7 @@
+
+# Estudiantes
+git clone https://github.com/enevaca/sis257-2022-2.git
+ls -la
+cd sis257-2022-2
+code .
+git pull
