@@ -5,3 +5,4 @@ ls -la
 cd sis257-2022-2
 code .
 git pull
+git checkout 20221001_git
