@@ -39,8 +39,8 @@ export class InterpreteService {
     const interprete = await this.repository.findOneBy({ id });
     if(!interprete) throw new NotFoundException(`El interprete ${id} no existe`);
 
-    const updateInteprete = Object.assign(interprete, updateInterpreteDto);
-    return this.repository.save(updateInteprete);
+    const updateInterprete = Object.assign(interprete, updateInterpreteDto);
+    return this.repository.save(updateInterprete);
   }
 
   async remove(id: number): Promise<void> {

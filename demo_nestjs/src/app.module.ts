@@ -3,6 +3,7 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { InterpreteModule } from './interprete/interprete.module';
+import { GeneroModule } from './genero/genero.module';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { InterpreteModule } from './interprete/interprete.module';
       synchronize: true,
     }),
     InterpreteModule,
+    GeneroModule,
   ],
   controllers: [AppController],
   providers: [],
