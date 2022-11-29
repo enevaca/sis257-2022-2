@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue.js - Tienda</title>
+  <link rel="stylesheet" href="./assets/styles.css">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div class="nav-bar"></div>
+
+    <div class="cart">Carro {{ cart.length }}</div>
+    <product-display :premium="premium" @add-to-cart="updateCart"></product-display>
+  </div>
+
+  <script src="./main.js"></script>
+  <script src="./components/ProductDisplay.js"></script>
+  <script type="module">
+    const mountApp = app.mount('#app')
+  </script>
+</body>
+
+</html>
